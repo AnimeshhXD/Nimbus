@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  transition: background 0.5s ease-in-out;
+}
+
+.weather-card, .forecast-card {
+  background: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@media (max-width: 600px) {
+  .forecast-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
