@@ -1,5 +1,4 @@
-
-
+const apiKey = "AJTWBE6ACRJWX8CHACXTWDPVB"
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success, geoFallback);
@@ -106,4 +105,5 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 getLocation();
+
 
