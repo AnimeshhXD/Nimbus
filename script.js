@@ -1,4 +1,4 @@
-const apiKey = "AJTWBE6ACRJWX8CHACXTWDPVB"; // Replace with your key
+
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -106,3 +106,4 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 getLocation();
+
